@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { shallow } from 'enzyme';
 
 import { findByAttr } from '../../utils/testUtils';
@@ -24,6 +24,7 @@ test('component-button should render button with `text` which passed through pro
 
 test('component-button should invoke function onClick passed through props', () => {
   const onClickMock = jest.fn();
+  const text = '+23';
   const wrapper = setup({ text, onClick: onClickMock });
   const btnCmp = findByAttr(wrapper, 'component-button');
   btnCmp.simulate('click');
