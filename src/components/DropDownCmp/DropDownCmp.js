@@ -4,13 +4,14 @@ import 'react-dropdown/style.css';
 
 export default function DropdownCmp({ options, onChange }) {
   return (
-    <React.Fragment>
+    <div>
       <Dropdown
+        value={options[0]}
         data-test="component-dropdown"
         options={options}
         onChange={onChange}
         placeholder="Select"
       />
-    </React.Fragment>
+    </div>
   );
 }

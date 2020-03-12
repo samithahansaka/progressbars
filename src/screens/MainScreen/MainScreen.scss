@@ -1,0 +1,39 @@
+// Medium Devices
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .mediumDevices {
+    padding: 0 5px !important;
+  }
+}
+
+// Small Devices
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .smallDevices {
+    padding-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  margin-top: 10%;
+}
+.progressBarsHeading {
+  text-align: center;
+}
+
+.progressBarsContainer {
+  padding: 15px !important;
+}
+.progressBarContainer {
+  padding-bottom: 15px;
+}
+.buttonContainer {
+  padding-top: 25px;
+}

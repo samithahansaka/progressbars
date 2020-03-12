@@ -4,12 +4,13 @@ import './ProgressBarCmp.scss';
 
 export default function ProgressBarCmp({ progress, exceeded }) {
   return (
-    <React.Fragment>
+    <div>
       <ProgressBar
+        data-test="component-progress"
         className={exceeded ? 'redProgress ' : ''}
         now={progress}
         label={`${progress}%`}
       />
-    </React.Fragment>
+    </div>
   );
 }
